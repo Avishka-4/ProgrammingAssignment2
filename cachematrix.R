@@ -23,13 +23,3 @@ cacheSolve <- function(x, ...) {
   x$setInverse(inv)
   inv
 }
-
-# Example usage:
-# Create a special matrix object
-mat <- makeCacheMatrix(matrix(c(1, 2, 3, 4), nrow = 2))
-
-# Compute and cache the inverse
-cacheSolve(mat)
-
-# Retrieve the inverse from the cache
-cacheSolve(mat)
